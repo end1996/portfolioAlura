@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-bg-color: #000000;
+    --secondary-color: #f6f6f6;
+    --tertiary-color: #22D4FD;
+
+    --font-title: "Krona One", serif;
+    --font-content: "Montserrat", serif;
+}
+
+/*Propiedades para hacer footer sticky*/
+html {
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh;*/
+    background-color: var(--main-bg-color);
+    color: var(--secondary-color);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-family: var(--font-content);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 15%;
+    align-items: center;
+}
+
+.presentation__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    line-height: 56px;
+}
+
+.highlight-title {
+    color: var(--tertiary-color);
+}
+.presentation__content__text {
+    font-family: var(--font-content);
+    font-size: 1.5rem;
+    line-height: 36px;
+}
+
+.presentation__content__subtitle {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__links__subtitle {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentation__links__each {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-content);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    width: 378px;
+    gap: 16px;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    border: 2px solid var(--tertiary-color);
+    text-decoration: none;
+}
+
+.presentation__image {
+    max-width: 50%;
+}
+.footer {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font-family: var(--font-content);
+    color: var(--main-bg-color);
+    font-size: 1.5rem;
+    padding: 24px;
+    /*Propiedades para hacer footer sticky*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    body {
+    /*Propiedades para hacer footer sticky*/
+    margin-bottom: 20%;
+    }
+    .presentation {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .header {
+        padding: 8% 0 4% 0;
+    }
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
+
+    .presentation__image {
+        margin-bottom: 8%;
+    }
+}
