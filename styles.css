@@ -9,11 +9,6 @@
     --font-content: "Montserrat", serif;
 }
 
-/*Propiedades para hacer footer sticky*/
-html {
-    position: relative;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -119,17 +114,10 @@ body {
     color: var(--main-bg-color);
     font-size: 1.5rem;
     padding: 24px;
-    /*Propiedades para hacer footer sticky*/
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
 @media (max-width: 1200px) {
-    body {
-    /*Propiedades para hacer footer sticky*/
-    margin-bottom: 20%;
-    }
     .presentation {
         flex-direction: column-reverse;
         gap: 50px;
