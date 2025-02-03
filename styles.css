@@ -91,6 +91,7 @@ body {
     font-family: var(--font-title);
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .presentation__links__each {
@@ -139,7 +140,19 @@ body {
         width: auto;
     }
 
+    .presentation__content__title {
+        text-align: center;
+    }
+
+    .presentation__content__text {
+        text-align: justify;
+    }
+
     .presentation__image {
         padding-bottom: 8%;
+    }
+
+    .presentation__links__each {
+        width: 100%;
     }
 }
